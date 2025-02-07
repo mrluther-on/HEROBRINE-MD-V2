@@ -24,12 +24,12 @@ async function sendNewsList(m, conn) {
   let newsText = '';
 
   for (const news of newsItems) {
-    newsText += `•───── 💝 Queen Hentai 💝 ─────•
+    newsText += `•───── HEROBRINE ─────•
 ❖ 𝑺𝑻𝑨𝑻𝑼𝑺: Active
-㋡ 𝑪𝑹𝑬𝑨𝑻𝑶𝑹: Dinuwa
+㋡ 𝑪𝑹𝑬𝑨𝑻𝑶𝑹: subaru
 ☞ 𝑵𝑬𝑾𝑺: ${news.title}
 🆔 News ID: ${news.id}
-•───── 💝 Queen Hentai 💝 ─────•\n\n`;
+•───── HEROBRINE ─────•\n\n`;
   }
 
   conn.sendMessage(m.chat, { text: newsText, quoted: m, contextInfo: { mentionedJid: [m.sender] } });
@@ -39,14 +39,14 @@ async function sendNewsList(m, conn) {
 async function sendSpecificNews(newsId, m, conn) {
   const newsInfo = await api.news(newsId);
 
-  const newsCaption = `•───── 💝 Queen Hentai 💝 ─────•
+  const newsCaption = `•───── HEROBRINE ─────•
 ❖ 𝑺𝑻𝑨𝑻𝑼𝑺: Active
-㋡ 𝑪𝑹𝑬𝑨𝑻𝑶𝑹: Dinuwa
+㋡ 𝑪𝑹𝑬𝑨𝑻𝑶𝑹: subaru
 ☞ 𝑵𝑬𝑾𝑺: ${newsInfo.results.TITLE}
 📅 Date: ${newsInfo.results.PUBLISHED}
 🔗 URL: ${newsInfo.results.URL}
 🗞️ Description: ${newsInfo.results.full_news}
-•───── 💝 Queen Hentai 💝 ─────•`;
+•───── HEROBRINE ─────•`;
 
   conn.sendFile(m.chat, newsInfo.results.COVER, 'thumbnail.jpg', newsCaption, m);
   m.react('✅');
