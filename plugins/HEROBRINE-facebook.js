@@ -2,7 +2,7 @@ import fg from 'api-dylux';
 
 const handler = async (m, { conn, args, usedPrefix, command }) => {
   if (!args[0]) {
-    throw `👸 Please send the link of a Facebook video\n\n👸 EX:\n*${usedPrefix + command}* https://www.facebook.com/satisfy2022/videos/1096430881329744/?d=null&vh=e`;
+    throw `👸 Please send the link of a Facebook video\n\n👸 EX:\n*${usedPrefix + command}* `;
   }
 
   const urlRegex = /^(?:https?:\/\/)?(?:www\.)?(?:facebook\.com|fb\.watch)\b([-a-zA-Z0-9@:%_\+.~#?&//=]*)/i;
@@ -15,7 +15,7 @@ const handler = async (m, { conn, args, usedPrefix, command }) => {
   try {
     const result = await fg.fbdl(args[0]);
     const tex = `
-👸─── {*💝 Queen Hentai 💝*} ─── ⊰
+👸─── {*⚡ＨＥＲＯＢＲＩＮＥ 🧩*} ─── ⊰
 👸 *VIDEO TITLE:* ${result.title}
 👸 ────── {⋆♬⋆} ────── ⊰`;
 
