@@ -2,9 +2,9 @@ import { webp2mp4 } from '../lib/webp2mp4.js'
 import { ffmpeg } from '../lib/converter.js'
 
 let handler = async (m, { conn }) => {
-    if (!m.quoted) throw '🇱🇰 Mention an animated sticker to —(••÷[ Š𝓊ḅᤂ𝖗𝓊 ]÷••)— WA Bot'
+    if (!m.quoted) throw 'Mention an animated sticker to —(••÷[ Š𝓊ḅᤂ𝖗𝓊 ]÷••)— WA Bot'
     let mime = m.quoted.mimetype || ''
-    if (!/webp|audio/.test(mime)) throw '🇱🇰 Mention an animated sticker to —(••÷[ Š𝓊ḅᤂ𝖗𝓊 ]÷••)—'
+    if (!/webp|audio/.test(mime)) throw ' Mention an animated sticker to —(••÷[ Š𝓊ḅᤂ𝖗𝓊 ]÷••)—'
     let media = await m.quoted.download()
     let out = Buffer.alloc(0)
     if (/webp/.test(mime)) {
