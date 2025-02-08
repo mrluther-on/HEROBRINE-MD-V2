@@ -3,17 +3,17 @@ import { download } from 'aptoide-scraper';
 let handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
   try {
     if (command === 'apk') {
-      if (!text) throw `*Provide a valid name to QUEEN-HENTAI 🤓 you want to download.*`;
+      if (!text) throw `*Provide a valid name to ＨＥＲＯＢＲＩＮＥ 🧩🤓 you want to download.*`;
 
       await conn.reply(m.chat, global.wait, m);
       let data = await download(text);
 
       if (data.size.replace(' MB', '') > 200) {
-        return await conn.sendMessage(m.chat, { text: '*The file is too high for QUEEN-HENTAI.😫*' }, { quoted: m });
+        return await conn.sendMessage(m.chat, { text: '*The file is too high for ＨＥＲＯＢＲＩＮＥ .😫*' }, { quoted: m });
       }
 
       if (data.size.includes('GB')) {
-        return await conn.sendMessage(m.chat, { text: '*The file is too high for QUEEN-HENTAI.😫*' }, { quoted: m });
+        return await conn.sendMessage(m.chat, { text: '*The file is too high for ⚡ＨＥＲＯＢＲＩＮＥ .😫*' }, { quoted: m });
       }
 
       await conn.sendMessage(
@@ -23,7 +23,7 @@ let handler = async (m, { conn, usedPrefix: prefix, command, text }) => {
       );
     }
   } catch {
-    throw `*Provide a valid link to QUEEN-HENTAI 🤓.*`;
+    throw `*Provide a valid link to ⚡ＨＥＲＯＢＲＩＮＥ  🤓.*`;
   }
 };
 
