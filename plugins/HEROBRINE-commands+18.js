@@ -1,7 +1,7 @@
 import axios from "axios"
 import fetch from 'node-fetch'
 let handler = async (m, {command, usedPrefix, conn}) => {
-if (!global.db.data.chats[m.chat].nsfw) throw `💝 Queen Hentai 💝 group doesnt supprt nsfw \n\n enable it by \n*${usedPrefix}enable* nsfw 💝 Queen Hentai 💝 join nsfw group https://chat.whatsapp.com/Jyjqx7KBfgjDC7QcefHB1S`
+if (!global.db.data.chats[m.chat].nsfw) throw `⚡ＨＥＲＯＢＲＩＮＥ 🧩 group doesnt supprt nsfw \n\n enable it by \n*${usedPrefix}enable* nsfw ⚡ＨＥＲＯＢＲＩＮＥ 🧩 join nsfw group https://chat.whatsapp.com/FyzcZHkAqBNEuRY4XAEOSb`
     let user = global.db.data.users[m.sender].age
     if (user < 17) throw m.reply(`Bza ubta wayasa madi bn 🤣 , YOU need to be atleast 18 years`)
 
